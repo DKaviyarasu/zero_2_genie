@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zero2genie | Mobile App Developement | Web Developement</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <meta name="description" content="We build better software solutions for your ideas with our Innovative tech team.">
+   <meta name="keywords" content="ui/ux design , web developers , android app developement , iOS app development , mobile app developer">
+    <link rel="icon" href="assets/img/logo1.png" type="image/x-icon">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+    <link href="assets/img/logo1.png" rel="icon">
+    <link href="assets/img/logo1.png" rel="apple-touch-icon">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/fonts/proxima-nova.ttf" rel="stylesheet">
+
+    
+    <link href="assets/css/style.css" rel="stylesheet">
+            <script src="assets/vendor/jquery/jquery.min.js"></script>
+
+        <script src="assets/js/proposal.js"></script>
+         <script type="text/javascript">
+      $(document).ready(function(){
+         $('#comment1').on("cut copy paste",function(e) {
+      e.preventDefault();
+   });
+      })
+
+      function myKeyPress(e){
+    var keynum;
+    if(window.event) { // IE                    
+      keynum = e.keyCode;
+    } else if(e.which){ // Netscape/Firefox/Opera                   
+      keynum = e.which;
+    }
+    if(keynum==62 || keynum==60)
+        e.preventDefault();
+  }
+
+  function img_pathUrl(input){
+        $('#img_url')[0].src = (window.URL ? URL : webkitURL).createObjectURL(input.files[0]);
+        var file = $('#img_url').val();
+        console.log($('#img_url'));
+        console.log('!!!!!!!!!!!!!!!!!');
+    }
+    </script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+
+<header id="header" class="fixed-top " style="background-color: #4238e8;">
+        <div class="container d-flex align-items-center" >
+ 
+            <h1 class="logo mr-auto">
+                <a href="index.html"> <img src="assets/img/attachments/zero2genie.png" alt="zero2genie" style=" object-fit: contain; box-shadow: #000; ">
+                </a>
+            </h1>
+
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About us</a></li>
+                    <li><a href="index.html#technologies">Technologies</a></li>
+                    <li><a href="index.html#works">Recent Works</a></li>
+
+                    
+                    <li><a href="#contact">Contact</a></li>
+ 
+
+                </ul>
+            </nav>
+
+
+
+
+        </div>
+    </header>
+
+
+      <div class="container font" style="margin-top: 80px;"><br><br>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card container" style="border-radius:25px;">
+                    <img src="assets/img/attachments/zero2genie.png" alt="zero2genie"   class="img-fluid zoom"><br>
+                    <h5 style="font-weight: bold;color:#000000;">We are Your Perfect<br>Cybersecurity Partner.</h5>
+                    <p style="line-height:20px;"></p>
+                    <p>
+                        Secure the Enterprise by contacting us before being exploited by real-world attackers. Our
+Team is looking forward to securing your Organisation.
+                    </p><br>
+                    <p><i class="bx bx-envelope" style="vertical-align: middle;"></i>&nbsp;&nbsp;<a href="mailto:support@zero2genie.com" class="call">
+                                support@zero2genie.com<br>
+                            </a>
+                    </p>
+                </div><br>
+            </div>
+
+
+            <div class="col-md-7">
+                <form onsubmit="event.preventDefault();" id="myForm">
+
+
+                    <div class="form-group">
+                        <span class="bx bx-id-card form-control-icon" aria-hidden="true"></span>
+
+                        <input type="text" class="form-control" id="name1" placeholder="Your Name" maxlength="36" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <span class="bx bx-flag form-control-icon" aria-hidden="true"></span>
+                            <select style="border-radius:15px;height:55px;background-color: white;border-color:lightgray;color:gray;" id="countrycode1" class="form-control col-md-12"
+                                aria-label="Default select example">
+                                <option value="" disabled>
+                                    select country
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-8 col-md-8">
+
+                            <div class="form-group">
+                                <span class="bx bx-mobile form-control-icon" aria-hidden="true"></span>
+                                <input required style="border-radius:15px;height:55px;" type="number" class="form-control"
+                                    id="mobilenumber1" aria-describedby="emailHelp" placeholder="mobile number"   >
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="bx bx-envelope form-control-icon" aria-hidden="true"></span>
+
+                        <input required style="border-radius:15px;height:55px;" type="email" class="form-control" id="Email1"
+                            aria-describedby="emailHelp" placeholder="Enter email" maxlength="255">
+                    </div>
+                    <div class="form-group">
+                        <span class="bx bx-building form-control-icon" aria-hidden="true"></span>
+
+                        <input required style="border-radius:15px;height:55px;" type="text" class="form-control"
+                            id="companyname" aria-describedby="emailHelp" placeholder="Company Name" maxlength="60">
+                    </div>
+
+          
+
+
+
+                    <div class="form-group">
+                        <span class="bx bx-user form-control-icon" aria-hidden="true"></span>
+
+                        <input required style="border-radius:15px;height:55px;" type="text" class="form-control" id="referredBy"
+                            aria-describedby="emailHelp" placeholder="How did you hear about us?" maxlength="60">
+                    </div>
+                    <div class="form-group">
+                        <span class="bx bx-message form-control-icon-message" aria-hidden="true"></span>
+                        <textarea onkeypress="myKeyPress(event)"  style="border-radius:15px;" class="form-control" rows="5" id="comment1"
+                            placeholder="Enter your message" maxlength="1000"></textarea>
+                    </div>
+
+
+                     <div>
+                    <div id="successmessage-contactus" class="alert alert-success" role="alert">
+
+
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div id="errormessage-contactus" class="alert alert-danger" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div  style="align-items: center; text-align: center;">
+                    <div class="spinner-border text-success" id="spin" ></div></div>
+
+                </div>
+
+                
+
+                
+
+
+
+
+                <!-- <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile"> -->
+
+                     
+                
+
+
+
+                
+                <div class="g-recaptcha" data-sitekey="6LdCLDoeAAAAAIf3KmRvc8Y-IU1n1o7BTpHTYgVF"></div><br>
+                <input type="submit" value="Get a proposal" id="submit1" class="btn " style="height: 50px;width: 100%;background-color: #46B6AD;color: white;border-radius: 10px;font-size: 20px;font-family: Proxima Nova, sans-serif;" />
+                    
+                <br>
+                    </form>
+<!--                     <img src="" id="img_url" alt="your image">
+ -->                    <br>
+                    <input type="file" id="img_file" onChange="img_pathUrl(this);">
+                
+                
+                <br>
+               
+            </div>
+        </div><br><br>
+    </div>
+
+
+ <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6 d-flex align-items-stretch">
+                        <div class="info">
+                            <div class="address">
+                                <i class="icofont-google-map"></i>
+                                <h4>Location:</h4>
+                                <p><a class="call" href="https://www.google.com/maps/place/Zero2genie/@12.7187906,77.8146322,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae717a66091b6f:0xdd213cfe80618352!8m2!3d12.7187854!4d77.8168262"> No.213/1A3B, Jeeva Nagar,<br>Dinnur, Hosur -635109<br> Tamil Nadu, India <br><br></a>
+                                </p>
+                            </div>
+
+                            <div class="email">
+                                <i class="icofont-envelope"></i>
+                                <h4>Email:</h4>
+                                <p><a href="mailto:support@zero2genie.com" class="call">
+                                    support@zero2genie.com<br>
+                                </a></p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="icofont-phone"></i>
+                                <h4>Call:</h4>
+                                <p><a href="tel:7339005777" class="call">
+                                    +91 7339005777<br>
+                                </a></p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.9177188452263!2d77.81463751419842!3d12.718790623817886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae717a66091b6f%3A0xdd213cfe80618352!2sZero2genie!5e0!3m2!1sen!2sin!4v1613973263885!5m2!1sen!2sin"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+    
+     <div id="preloader"></div>
+
+
+
+ <footer id="footer">
+
+
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <img src="assets/img/attachments/zero2genie.png" alt="zero2genie" style="width: 100%; object-fit: contain; box-shadow: #000;">
+
+                        <div style="padding: 20px;">
+                            <a class="call" href="https://www.google.com/maps/place/Zero2genie/@12.7187906,77.8146322,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae717a66091b6f:0xdd213cfe80618352!8m2!3d12.7187854!4d77.8168262"> No.213/1A3B, Jeeva Nagar,<br>Dinnur, Hosur -635109<br> Tamil Nadu, India <br><br></a>
+
+                            <a href="tel:7339005777" class="call">
+                                <strong>Phone:</strong> +91 7339005777<br>
+                            </a>
+
+                            <a href="mailto:support@zero2genie.com" class="call">
+                                <strong>Email:</strong> support@zero2genie.com<br>
+                            </a>
+                        </div>
+
+                    </div>
+<div class="col-lg-1"></div>
+                    <div class="col-lg-2 col-md-6 footer-links" >
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="index.html#home">Home</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="index.html#about">About us</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="index.html#technologies">Technologies</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="index.html#team">Team</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="#contact">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="index.html#technologies">App Development</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="index.html#technologies">Web Development</a>
+                            </li>
+
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="index.html#technologies">Graphic Design</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="index.html#technologies">UX/UI Design</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i>
+                                <a href="index.html#technologies">3D Modeling</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+
+                        <div class="social-links mt-3">
+                            <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                            <a href="https://www.facebook.com/Zero2Genie" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://www.instagram.com/zero2genie/" class="instagram"><i class="bx bxl-instagram"></i></a>
+
+                            <a href="https://www.linkedin.com/company/72037129/admin/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            <a href="https://www.youtube.com/channel/UCkUSGZMzud8-HLrctrwCXvQ" class="linkedin"><i class="bx bxl-youtube" ></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>zero2genie</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+         <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+
+
+ <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
